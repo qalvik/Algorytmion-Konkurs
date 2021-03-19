@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ySlLg2+UQqdmQoNS1Cz7vRGPhOPxV/5oaD09fa2jQrD7aC0ouvAy851f+In6PVIxbyAAv4Lv9rCRroawwjfubA==",
+  "dgSpecHash": "2PaQhAYnU9QmUKCA9TL+Xg06rUSuPeOT9g9JZrAaaH8HtR4/7gyABPXA+ys2HVWJdt5dwi3Ixft5vJa0XISG7w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\zad3_skonczone\\zad3.csproj",
+  "projectFilePath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad3_skonczone\\zad3.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\zero\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
     "C:\\Users\\zero\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512",

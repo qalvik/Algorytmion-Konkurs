@@ -10,45 +10,50 @@ namespace zad3
 {
     class Program
     {      
+        private static bool Exit = true;
         private static bool FileFound = true;
         private static string Word;
         private static HashSet<string> Words;
         private static bool IsFinished = false;
         private static int PlayerMoveCount = 0;
+        private static char[] alpha = "aąbcćdeęfghijklłmnńoóprsśtuwyzźż".ToCharArray();
         
         static void Main(string[] args)
         {   
             LoadWords();
-
-            if(FileFound)
-                StartGame(); 
-            else
-                Console.ReadLine();                 
+            do
+            {
+                if(FileFound)
+                {
+                    StartGame();
+                    ExitGame();
+                }                   
+                else
+                    Console.ReadLine();    
+            }
+            while(Exit);                    
         }
         private static void FirstPlayerMove()
         {      
             Console.WriteLine("Podaj pierwszą literę:" );
             Word = Console.ReadLine();
+            Console.WriteLine();
             ValidateStringInput(Word);
             PlayerMoveCount++;  
         }
 
         private static void FirstComputerMove()
         {
-            char[] alpha = "aąbcćdeęfghijklłmnńoóprsśtuwyzźż".ToCharArray();
-
             Random random = new Random();
             int start = random.Next(0, alpha.Length);
             Word = alpha[start].ToString();
-            Console.WriteLine(alpha[start] + "\n");
-           
+            Console.WriteLine(alpha[start] + "\n");         
         }
 
         private static void ComputerMove()
         {   
             Random rnd = new Random();
            
-            char[] alpha = "aąbcćdeęfghijklłmnńoóprsśtuwyzźż".ToCharArray();
             int start = rnd.Next(0, alpha.Length);
             int sides = rnd.Next(0,2);
 
@@ -108,7 +113,8 @@ namespace zad3
                         {     
                             brk = false;
                             Console.WriteLine("Ruch komputera");
-                            Console.WriteLine(Word);  
+                            Console.WriteLine(Word);
+                            Console.WriteLine();   
                         } 
                         else
                             lines.Remove(temp);
@@ -122,7 +128,8 @@ namespace zad3
                             Word = alpha[start] + Word;
 
                         Console.WriteLine("Ruch komputera");
-                        Console.WriteLine(Word);  
+                        Console.WriteLine(Word);
+                        Console.WriteLine();  
                         brk = false;
                     }                
                 }
@@ -210,7 +217,7 @@ namespace zad3
             else if(side == 1)
                 Word += character;
             
-            Console.WriteLine(Word + "\n"); 
+            Console.WriteLine(Word + "\n");
         }
 
         private static void StartGame()
@@ -250,8 +257,7 @@ namespace zad3
                 }
             }
 
-            Console.WriteLine("******************KONIEC GRY******************");
-            Console.ReadLine();
+            Console.WriteLine("******************KONIEC GRY******************" + "\n");
         }
 
         private static void LoadWords()
@@ -287,9 +293,20 @@ namespace zad3
         {
             while(!input.All(char.IsLetter))
             {           
-                Console.WriteLine("Proszę podać prawidłową literę : ");
+                Console.WriteLine("Proszę podać prawidłową literę: ");
                 input = Console.ReadLine();
             }
+        }
+        private static void ExitGame()
+        {
+            Console.WriteLine("Czy chcesz opuścić program (wciśnij 0), czy chcesz zagrać jeszcze raz? (Wpisz jakąkolwiek inną liczbę)");
+            string input = Console.ReadLine();
+            int choice;
+            
+            ValidateInput(input, out choice);
+            Console.Clear();
+            if(choice == 0)
+                Exit = false;
         }
     }
 }

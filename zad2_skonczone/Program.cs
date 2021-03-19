@@ -1,5 +1,4 @@
 ﻿// Zadanie 2 - C# - MS VISUAL STUDIO 2017
-// Przy n > 6 dla rozdzielczości 1920x1080 ekran nie jest wystraczający, aby prawidłowo narysować ślimaka
 
 using System;
 using System.Linq;
@@ -30,6 +29,8 @@ namespace zad2
             while(Exit);
             
         }
+        
+        // Przy n > 6 dla rozdzielczości 1920x1080 ekran nie jest wystraczający, aby prawidłowo narysować ślimaka
         private static void DrawSnail()
         {
             Console.WriteLine("Podaj n:");

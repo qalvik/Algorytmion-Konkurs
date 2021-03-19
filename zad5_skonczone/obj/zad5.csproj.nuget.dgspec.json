@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\zad5_skonczone\\zad5.csproj": {}
+    "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad5_skonczone\\zad5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\zad5_skonczone\\zad5.csproj": {
+    "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad5_skonczone\\zad5.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\zad5_skonczone\\zad5.csproj",
+        "projectUniqueName": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad5_skonczone\\zad5.csproj",
         "projectName": "zad5",
-        "projectPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\zad5_skonczone\\zad5.csproj",
+        "projectPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad5_skonczone\\zad5.csproj",
         "packagesPath": "C:\\Users\\zero\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\zad5_skonczone\\obj\\",
+        "outputPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad5_skonczone\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

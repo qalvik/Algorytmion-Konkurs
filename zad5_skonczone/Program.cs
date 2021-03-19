@@ -29,6 +29,7 @@ namespace zad5
             
         }
 
+        // Funkcja a)
         private static void GetCurveLengthA(double startAngle, double endAngle, double density)
         {
             double output = 0;
@@ -48,6 +49,7 @@ namespace zad5
             
         }
 
+        // Funkcja b)
         private static void GetCurveLengthB(double startAngle, double endAngle, double density)
         {
             double output = 0;
@@ -66,6 +68,7 @@ namespace zad5
             Console.WriteLine(output);            
         }
 
+        // Funkcja c)
         private static void GetCurveLengthC(double startAngle, double endAngle, double density)
         {
             double output = 0;
@@ -84,6 +87,7 @@ namespace zad5
             Console.WriteLine(output);            
         }
 
+        // Funkcja d)
         private static void GetCurveLengthD(double startAngle, double endAngle, double density)
         {
             double output = 0;
@@ -102,30 +106,6 @@ namespace zad5
             }
             Console.WriteLine(output);            
         }
-
-        private static double GetAngleInDegree(double x, double y)
-        {
-            double angle = GetAngle(x,y);
-            angle = angle * 180.0 / Math.PI;
-            return angle;
-        }
-
-        private static double GetAngleInRadian(double x, double y)
-        {
-            double angle = GetAngle(x,y);
-            return angle;
-        }
-
-        private static double GetAngle(double x, double y)
-        {
-            double angle = Math.Atan2(y, x);
-
-            if(angle < 0.0)
-                angle += Math.PI * 2.0;
-
-            return angle;
-        }
-
         private static void ChooseFunction(string input, double startAngle, double endAngle, double density)
         {
 

@@ -5,9 +5,14 @@ namespace zad1
 {
     class Program
     {
+        private static bool Exit  = true;
         static void Main(string[] args)
         {
-            Calculate();       
+            do
+            {
+                Calculate();   
+            }
+            while(Exit);               
         }
 
         private static void ValidateInput(string input, out int opt)
@@ -42,7 +47,18 @@ namespace zad1
             
             ValidateInput(input, out n);
             Console.WriteLine("Wynik: " + Result(n));
-            Console.ReadLine();
+            ExitGame();
+        }
+        private static void ExitGame()
+        {
+            Console.WriteLine("Czy chcesz opuścić program (wciśnij 0), czy chcesz wybrać zmienne jeszcze raz? (Wpisz jakąkolwiek inną liczbę)");
+            string input = Console.ReadLine();
+            int choice;
+            
+            ValidateInput(input, out choice);
+            Console.Clear();
+            if(choice == 0)
+                Exit = false;
         }
     }
 }

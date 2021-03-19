@@ -24,3 +24,16 @@ C:\Users\zero\OneDrive\Pulpit\algorytmion\zad4_skonczone\obj\Debug\netcoreapp3.1
 C:\Users\zero\OneDrive\Pulpit\algorytmion\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.dll
 C:\Users\zero\OneDrive\Pulpit\algorytmion\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.pdb
 C:\Users\zero\OneDrive\Pulpit\algorytmion\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.genruntimeconfig.cache
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\bin\Debug\netcoreapp3.1\zad4.exe
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\bin\Debug\netcoreapp3.1\zad4.deps.json
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\bin\Debug\netcoreapp3.1\zad4.runtimeconfig.json
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\bin\Debug\netcoreapp3.1\zad4.runtimeconfig.dev.json
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\bin\Debug\netcoreapp3.1\zad4.dll
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\bin\Debug\netcoreapp3.1\zad4.pdb
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.csprojAssemblyReference.cache
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.AssemblyInfoInputs.cache
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.AssemblyInfo.cs
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.csproj.CoreCompileInputs.cache
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.dll
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.pdb
+C:\Users\zero\OneDrive\Pulpit\algorytmion\Algorytmion\Algorytmion-Konkurs\zad4_skonczone\obj\Debug\netcoreapp3.1\zad4.genruntimeconfig.cache

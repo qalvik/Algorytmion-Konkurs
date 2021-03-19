@@ -17,7 +17,7 @@ namespace zad4
         }
         private static void GetCoordinates()
         {
-            int shots;
+            long shots;
             double a,b,y1,y2;
 
             Input(out a, out b, out y1, out y2, out shots);
@@ -44,18 +44,18 @@ namespace zad4
 
 
         }
-        private static double FunctionA(int[,] arr, double vectorX, double vectorY, int shotsCount)
+        private static double FunctionA(int[,] arr, double vectorX, double vectorY, long shotsCount)
         {
             Random r = new Random();
             double sum = 0; 
 
-            for (int i = 0; i < shotsCount; i++)
+            for (long i = 0; i < shotsCount; i++)
             {
                 double y = r.Next(arr.GetLength(0));
                 double x = r.Next(arr.GetLength(1));
 
-                x = x / 1000;
-                y = y / 1000;
+                x = x / 100;
+                y = y / 100;
 
                 double e = 2.25 - (x + vectorX) + vectorY;
                 double f = x * (2 - (x + vectorX)) + vectorY;
@@ -66,18 +66,18 @@ namespace zad4
             return sum;
         }
 
-        private static double FunctionB(int[,] arr, double vectorX, double vectorY, int shotsCount)
+        private static double FunctionB(int[,] arr, double vectorX, double vectorY, long shotsCount)
         {
             Random r = new Random();
             double sum = 0; 
 
-            for (int i = 0; i < shotsCount; i++)
+            for (long i = 0; i < shotsCount; i++)
             {
                 double y = r.Next(arr.GetLength(0));
                 double x = r.Next(arr.GetLength(1));
 
-                x = x / 1000;
-                y = y / 1000;
+                x = x / 100;
+                y = y / 100;
 
                 double e = x + Math.Cos(x + vectorX) - 0.5 + vectorY;
                 double f = (x - 1) * Math.Sin(x + vectorX) + vectorY;
@@ -89,18 +89,18 @@ namespace zad4
             return sum;
         }
 
-        private static double FunctionC(int[,] arr, double vectorX, double vectorY, int shotsCount)
+        private static double FunctionC(int[,] arr, double vectorX, double vectorY, long shotsCount)
         {
             Random r = new Random();
             double sum = 0; 
 
-            for (int i = 0; i < shotsCount; i++)
+            for (long i = 0; i < shotsCount; i++)
             {
                 double y = r.Next(arr.GetLength(0));
                 double x = r.Next(arr.GetLength(1));
 
-                x = x / 1000;
-                y = y / 1000;
+                x = x / 100;
+                y = y / 100;
 
                 double e = -Math.Sqrt(1-Math.Pow((x + vectorX), 2)) + vectorY; 
                 double f = Math.Sqrt(1-Math.Pow((x + vectorX), 2)) + vectorY;
@@ -112,18 +112,18 @@ namespace zad4
             return sum;
         }
 
-        private static double FunctionD(int[,] arr, double vectorX, double vectorY, int shotsCount)
+        private static double FunctionD(int[,] arr, double vectorX, double vectorY, long shotsCount)
         {
             Random r = new Random();
             double sum = 0; 
 
-            for (int i = 0; i < shotsCount; i++)
+            for (long i = 0; i < shotsCount; i++)
             {
                 double y = r.Next(arr.GetLength(0));
                 double x = r.Next(arr.GetLength(1));
 
-                x = x / 1000;
-                y = y / 1000;
+                x = x / 100;
+                y = y / 100;
 
                 double e = Math.Pow(2, Math.Cos(x + vectorX)) + 1.15 + vectorY; 
                 double f = Math.Pow(2, Math.Sin(x + vectorX)) + vectorY;
@@ -134,14 +134,14 @@ namespace zad4
 
             return sum;
         }
-        private static void Input(out double a, out double b, out double y1, out double y2, out int count)
+        private static void Input(out double a, out double b, out double y1, out double y2, out long count)
         {
             ConsoleDoubleInput("a", out a);
             ConsoleDoubleInput("b", out b);
             ConsoleDoubleInput("y1", out y1);
             ConsoleDoubleInput("y2", out y2);
 
-            ConsoleIntInput(out count);
+            ConsoleLongInput(out count);
         }
 
         private static void CalculateCoordinates(double a, double b, out double x, out double y, double y1, double y2,
@@ -187,10 +187,11 @@ namespace zad4
             }               
         }
 
+        //Tworzy I ćwiartkę układu współrzędnych o początku w punktcie P(0,0)
         private static int[,] CreateArray(double x, double y)
         {
-            double arrX = y * 1000;
-            double arrY = x * 1000; 
+            double arrX = y * 100;
+            double arrY = x * 100; 
 
             int [,] arr = new int[(long)arrX, (long)arrY];
 
@@ -204,28 +205,28 @@ namespace zad4
             return arr;
         }
 
-        private static double ChooseFunction(string input, int[,] arr, double vectorX, double vectorY, int shotsCount)
+        private static double ChooseFunction(string input, int[,] arr, double vectorX, double vectorY, long shotsCount)
         {
             double result = 0;
 
             switch(input) 
             {
-            case "a":
-                result = FunctionA(arr, vectorX, vectorY, shotsCount);   
-                break;
-            case "b":
-                result = FunctionB(arr, vectorX, vectorY, shotsCount);   
-                break;
-            case "c":
-                result = FunctionC(arr, vectorX, vectorY, shotsCount);   
-                break;
-            case "d":
-                result = FunctionD(arr, vectorX, vectorY, shotsCount);   
-                break;
-            default:
-                result = 0;
-                Console.WriteLine("Funkcja oznaczona podaną literą nie istnieje");
-                break;
+                case "a":
+                    result = FunctionA(arr, vectorX, vectorY, shotsCount);   
+                    break;
+                case "b":
+                    result = FunctionB(arr, vectorX, vectorY, shotsCount);   
+                    break;
+                case "c":
+                    result = FunctionC(arr, vectorX, vectorY, shotsCount);   
+                    break;
+                case "d":
+                    result = FunctionD(arr, vectorX, vectorY, shotsCount);   
+                    break;
+                default:
+                    result = 0;
+                    Console.WriteLine("Funkcja oznaczona podaną literą nie istnieje");
+                    break;
             }
 
             return result;
@@ -250,6 +251,17 @@ namespace zad4
             }
         }
 
+        private static void ValidateLongInput(string input, out long opt)
+        {
+            long.TryParse(input, out opt);
+
+            while(!long.TryParse(input, out opt))
+            {
+                Console.WriteLine("Proszę podać liczbę całkowitą: ");
+                input = Console.ReadLine();
+            }
+        }
+
         private static void ValidateIntInput(string input, out int opt)
         {
             int.TryParse(input, out opt);
@@ -260,7 +272,6 @@ namespace zad4
                 input = Console.ReadLine();
             }
         }
-
         private static void ConsoleDoubleInput(string coordinateName, out double a)
         {
             Console.WriteLine("Podaj wartość {0}: ", coordinateName);
@@ -268,11 +279,11 @@ namespace zad4
             ValidateDoubleInput(input, out a);
         }
 
-        private static void ConsoleIntInput(out int a)
+        private static void ConsoleLongInput(out long a)
         {
             Console.WriteLine("Podaj liczbę strzałów: ");
             string input = Console.ReadLine();
-            ValidateIntInput(input, out a);
+            ValidateLongInput(input, out a);
         }
 
         private static void ExitGame()

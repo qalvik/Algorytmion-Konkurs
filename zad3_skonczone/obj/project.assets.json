@@ -146,11 +146,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\zad3_skonczone\\zad3.csproj",
+      "projectUniqueName": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad3_skonczone\\zad3.csproj",
       "projectName": "zad3",
-      "projectPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\zad3_skonczone\\zad3.csproj",
+      "projectPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad3_skonczone\\zad3.csproj",
       "packagesPath": "C:\\Users\\zero\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\zad3_skonczone\\obj\\",
+      "outputPath": "C:\\Users\\zero\\OneDrive\\Pulpit\\algorytmion\\Algorytmion\\Algorytmion-Konkurs\\zad3_skonczone\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

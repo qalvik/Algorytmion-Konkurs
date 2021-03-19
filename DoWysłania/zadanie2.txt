@@ -7,6 +7,7 @@ namespace zad2
 {
     class Program
     {
+        private static bool Exit = true;
         private static int n;
         private static string anteeneEye;
         private static string side = "|";
@@ -21,6 +22,17 @@ namespace zad2
         
         static void Main(string[] args)
         {  
+            do
+            {
+                DrawSnail();
+            }
+            while(Exit);
+            
+        }
+        
+        // Przy n > 6 dla rozdzielczości 1920x1080 ekran nie jest wystraczający, aby prawidłowo narysować ślimaka
+        private static void DrawSnail()
+        {
             Console.WriteLine("Podaj n:");
             string input = Console.ReadLine();
     
@@ -52,7 +64,8 @@ namespace zad2
 
             //Write head
             WriteHead(n);
-            
+
+            ExitGame();
         }
         private static string EmptySpace(int count)
         {   
@@ -63,17 +76,6 @@ namespace zad2
         {
             string line = new string('-', count);
             return line;
-        }
-        
-        private static void ValidateInput(string input, out int opt)
-        {
-            int.TryParse(input, out opt);
-
-            while(!int.TryParse(input, out opt))
-            {
-                Console.WriteLine("Proszę podać prawidłową liczbę całkowitą: ");
-                input = Console.ReadLine();
-            }
         }
         private static void ChangeEyeSize(int n)
         {
@@ -213,8 +215,28 @@ namespace zad2
 
             string finalShell = DrawLine(n * 36);
             Console.WriteLine(empty + finalShell);
+            Console.WriteLine();
+        }
+        private static void ExitGame()
+        {
+            Console.WriteLine("Czy chcesz opuścić program (wciśnij 0), czy chcesz wybrać zmienne jeszcze raz? (Wpisz jakąkolwiek inną liczbę)");
+            string input = Console.ReadLine();
+            int choice;
+            
+            ValidateInput(input, out choice);
+            Console.Clear();
+            if(choice == 0)
+                Exit = false;
+        }
+        private static void ValidateInput(string input, out int opt)
+        {
+            int.TryParse(input, out opt);
 
-            Console.ReadLine();
+            while(!int.TryParse(input, out opt))
+            {
+                Console.WriteLine("Proszę podać prawidłową liczbę całkowitą: ");
+                input = Console.ReadLine();
+            }
         }
     }  
 }
